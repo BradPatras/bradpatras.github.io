@@ -1,4 +1,4 @@
- *Apps on Tap*
+ *Apps on Tap
  
  # Donut Manifesto
 
