@@ -1,5 +1,3 @@
-
-*Apps on Tap* 
 ## Donut Manifesto
 
 #### Ranked by Votes
