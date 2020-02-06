@@ -1,8 +1,8 @@
- *Apps on Tap
- 
- # Donut Manifesto
 
-### Ranked by Votes
+*Apps on Tap* 
+## Donut Manifesto
+
+#### Ranked by Votes
 - **x5** Blueberry Cake &nbsp;
 - **x4** Krispy Kreme Glazed &nbsp;
 - **x4** Eclair (Long John w/ creme filling) &nbsp;
