@@ -1,6 +1,6 @@
  *Apps on Tap*
  
- # Donut Manifesto &nbsp;
+ # Donut Manifesto
 
 ### Ranked by Votes
 - **x5** Blueberry Cake &nbsp;
