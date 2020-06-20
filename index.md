@@ -1,3 +1,8 @@
+---
+layout: page
+title:
+---
+
 ## GPX Recorder | 2017
 [Github](https://github.com/BradPatras/gpx-recorder)  
 GPX Recorder came from the desire to have an app that I could use while on multi-day backpacking trips to record my route on my phone _without_ worrying about the app draining my battery.  The name comes from the other main function of the app: exporting the routes to the .gpx file format, which is one of the most popular gps data standards. 
