@@ -1,13 +1,16 @@
-body {
+html, body {
+	min-width: 100%;
 	background: #f6f6f6;
 	font-family: helvetica, arial;
 }
 
 .navbar {
+	margin:0px auto;
+    left:0px;
+    right:0px;
 	display: inline-block;
 	background-color: #011627;
 	min-width: 100%;
-	width: 100%;
 	font-size: 5ch;
 	color: #C3DFE0;
 }
@@ -21,6 +24,11 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     box-shadow: 0px 0px 20px 0px #dfdfdf;
+    display: flex;
+}
+
+.project-description-box {
+	flex-direction: column;
 }
 
 .project-date {
@@ -38,19 +46,16 @@ body {
 }
 
 .project-image-box {
-	height: 250px;
-	width: 200px;
+	height: 300px;
 	padding: 15px;
-	margin-left: 45px;
 	background-color: #e3e3e3;
-	float: right;
+	flex-direction: row;
 }
 
 .project-image {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
 }
 
 .project-link {
