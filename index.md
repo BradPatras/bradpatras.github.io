@@ -1,7 +1,4 @@
----
-layout: page
-title:
----
+
 
 ## GPX Recorder | 2017
 [Github](https://github.com/BradPatras/gpx-recorder)  
