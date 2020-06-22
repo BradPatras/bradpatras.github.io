@@ -1,8 +1,22 @@
+/* Color palette
+	off-white: #f6f6f6
+	almost black: #282828
+	dark blue: #011627
+	light blue: #c3dfe0
+	shadow: #dfdfdf
+	grey: #e3e3e3
+	dark red: #98270b
+*/
+
 html, body {
 	min-width: 100%;
 	margin: 0px;
 	background: #f6f6f6;
-	font-family: helvetica, arial;
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	color: #282828;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
@@ -14,7 +28,7 @@ html, body {
 	min-width: 100%;
 	font-size: 5ch;
 	text-align: center;
-	color: #C3DFE0;
+	color: #c3dfe0;
 	padding-left: 16px;
 }
 
@@ -82,7 +96,7 @@ html, body {
 	font-weight: 550;
 	text-underline-position: 2px;
 	text-decoration: none;
-	color: #98270B;
+	color: #98270b;
 	
 }
 
@@ -97,6 +111,6 @@ a:hover, a:active {
 }
 
 a:link, a:visited {
-	color: #98270B;
+	color: #98270b;
 	text-decoration: none;
 }
