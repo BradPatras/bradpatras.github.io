@@ -1,5 +1,6 @@
 html, body {
 	min-width: 100%;
+	margin: 0px;
 	background: #f6f6f6;
 	font-family: helvetica, arial;
 }
@@ -12,7 +13,25 @@ html, body {
 	background-color: #011627;
 	min-width: 100%;
 	font-size: 5ch;
+	text-align: center;
 	color: #C3DFE0;
+	padding-left: 16px;
+}
+
+.navbar-title {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-weight: normal;
+	font-size: 1.8ch;
+}
+
+.navbar-icon {
+	margin: 0px;
+	padding: 0px;
+	min-width: 20px;
+	min-height: 20px;
+	width: 30px;
+	height: 30px;
 }
 
 .project-box {
@@ -29,6 +48,7 @@ html, body {
 
 .project-description-box {
 	flex-direction: column;
+	margin-right: 30px;
 }
 
 .project-date {
@@ -74,4 +94,9 @@ html, body {
 
 a:hover, a:active {
   text-decoration: underline;
+}
+
+a:link, a:visited {
+	color: #98270B;
+	text-decoration: none;
 }
