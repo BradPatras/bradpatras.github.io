@@ -13,6 +13,7 @@ html, body {
 	margin: 0px;
 	background: #f6f6f6;
 	font-family: 'Roboto', sans-serif;
+	position: absolute;
 }
 
 p {
@@ -21,26 +22,22 @@ p {
 }
 
 .navbar {
-	margin:0px auto;
-    left:0px;
-    right:0px;
 	display: inline-block;
 	background-color: #011627;
 	min-width: 100%;
 	text-align: center;
-	color: #c3dfe0;
-	padding-left: 16px;
+	align-items: center;
 }
 
 .navbar-title {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	font-weight: normal;
-	font-size: xx-large;
+	color: #c3dfe0;
 }
 
 .navbar-icon {
-	margin: 0px;
+	margin: 6px;
 	padding: 0px;
 	min-width: 20px;
 	min-height: 20px;
@@ -58,9 +55,11 @@ p {
     margin-top: 20px;
     box-shadow: 0px 0px 20px 0px #dfdfdf;
     display: flex;
+    flex-grow: 
 }
 
 .project-description-box {
+	min-width: 100px;
 	flex-direction: column;
 	margin-right: 30px;
 	font-size: medium;
@@ -91,11 +90,10 @@ p {
 	text-underline-position: 2px;
 	text-decoration: none;
 	color: #98270b;
-	
 }
 
 .content {
-	width: 1000px;
+	max-width: 1000px;
     position: relative;
     margin: auto;
 }
