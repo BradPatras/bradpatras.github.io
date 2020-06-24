@@ -21,6 +21,15 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+	color: #98270b;
+	text-decoration: none;
+}
+
 .navbar {
 	display: inline-block;
 	background-color: #011627;
@@ -54,8 +63,10 @@ p {
     margin-bottom: 20px;
     margin-top: 20px;
     box-shadow: 0px 0px 20px 0px #dfdfdf;
-    display: flex;
-    flex-grow: 
+}
+
+.project-content {
+	display: flex;
 }
 
 .project-description-box {
@@ -98,11 +109,9 @@ p {
     margin: auto;
 }
 
-a:hover, a:active {
-  text-decoration: underline;
-}
-
-a:link, a:visited {
-	color: #98270b;
-	text-decoration: none;
+@media (max-width: 600px) {
+	.project-content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
