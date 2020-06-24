@@ -114,4 +114,8 @@ a:link, a:visited {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	.project-description-box {
+		margin-right: 0px;
+	}
 }
