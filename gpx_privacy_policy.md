@@ -17,12 +17,10 @@ The app does use third party services that may collect information used to ident
 Link to privacy policy of third party service providers used by the app
 
 *   [Google Play Services](https://www.google.com/policies/privacy/)
-*   [Firebase Analytics](https://firebase.google.com/policies/analytics)
-*   [Crashlytics](http://try.crashlytics.com/terms/privacy-policy.pdf)
 
 **Log Data**
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through the Google Play Developer Console) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
 
 **Cookies**
 
@@ -32,7 +30,7 @@ This Service does not use these “cookies” explicitly. However, the app may u
 
 **Service Providers**
 
-I may employ third-party companies and individuals due to the following reasons:
+I may employ third-party companies due to the following reasons:
 
 *   To facilitate our Service;
 *   To provide the Service on our behalf;
@@ -44,6 +42,10 @@ I want to inform users of this Service that these third parties have access to y
 **Security**
 
 I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+
+**Background Location Access**
+
+This app collects location data to enable the route recorder function even when the app is closed or not in use.  The app keeps this location data locally on your device in a protected container private to this app.  The app will attempt to show a notification when accessing your location in the background, but it may be hidden due to preferences of your device.
 
 **Links to Other Sites**
 
