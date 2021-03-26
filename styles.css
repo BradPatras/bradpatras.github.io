@@ -36,7 +36,7 @@ a:link, a:visited {
 	min-width: 100%;
 	text-align: center;
 	align-items: center;
-	margin-bottom: 30em;
+	padding-bottom: 6em;
 }
 
 .navbar-title {
