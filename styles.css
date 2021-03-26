@@ -46,13 +46,8 @@ a:link, a:visited {
 	color: #c3dfe0;
 }
 
-.navbar-icon {
+.navbar-link {
 	margin: 6px;
-	padding: 0px;
-	min-width: 20px;
-	min-height: 20px;
-	width: 30px;
-	height: 30px;
 }
 
 .project-box {
