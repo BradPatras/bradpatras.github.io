@@ -7,7 +7,6 @@ body {
   overflow: hidden;
   width: 75vw;
   height: 75vh;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
