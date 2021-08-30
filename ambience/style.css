@@ -6,6 +6,7 @@ body {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
+  margin: 0 auto;
 }
 .video-background iframe {
   position: absolute;
