@@ -10,6 +10,7 @@ body, html {
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   margin: 0 auto;
+  overflow: hidden;
 }
 .centered-iframe iframe {
   position: absolute;
@@ -17,4 +18,5 @@ body, html {
   left: 0;
   width: 100%;
   height: 75%;
+  overflow: hidden;
 }
