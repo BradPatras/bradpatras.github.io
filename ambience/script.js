@@ -27,7 +27,7 @@ function startTimer() {
 }
 
 function resetTimer() {
-  minutesText.innerHTML = getNumberFormattedForClock(intervalMinutes);
+  document.querySelector("#minutes").innerHTML = getNumberFormattedForClock(intervalMinutes);
   clearInterval(timer);
   document.querySelector("#start").style.display = "inline-flex";
   document.querySelector("#reset").style.display = "none";
