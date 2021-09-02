@@ -1,13 +1,16 @@
-const startBtn = document.querySelector("#start");
-const resetBtn = document.querySelector("#reset");
-const minutesText = document.querySelector("#minutes");
-
 const intervalMinutes = 25;
-
 var timer;
 let timerStartDate;
 
 window.onload = (event) => {
+  setup();
+};
+
+function setup() {
+  const startBtn = document.querySelector("#start");
+  const resetBtn = document.querySelector("#reset");
+  const minutesText = document.querySelector("#minutes"); 
+  
   Notification.requestPermission();
   
   startBtn.addEventListener("click", () => {
@@ -17,7 +20,7 @@ window.onload = (event) => {
   resetBtn.addEventListener("click", () => {
     resetTimer();
   });
-};
+}
 
 function startTimer() {
   timerStartDate = new Date();
