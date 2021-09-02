@@ -9,15 +9,15 @@ let timerStartDate;
 
 window.onload = (event) => {
   Notification.requestPermission();
+  
+  startBtn.addEventListener("click", () => {
+    startTimer();
+  });
+
+  resetBtn.addEventListener("click", () => {
+    resetTimer();
+  });
 };
-
-startBtn.addEventListener("click", () => {
-  startTimer();
-});
-
-resetBtn.addEventListener("click", () => {
-  resetTimer();
-});
 
 function startTimer() {
   timerStartDate = new Date();
