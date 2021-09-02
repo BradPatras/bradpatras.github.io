@@ -7,17 +7,13 @@ window.onload = (event) => {
 };
 
 function setup() {
-  const startBtn = document.querySelector("#start");
-  const resetBtn = document.querySelector("#reset");
-  const minutesText = document.querySelector("#minutes"); 
-  
   Notification.requestPermission();
   
-  startBtn.addEventListener("click", () => {
+  document.querySelector("#start").addEventListener("click", () => {
     startTimer();
   });
 
-  resetBtn.addEventListener("click", () => {
+  document.querySelector("#reset").addEventListener("click", () => {
     resetTimer();
   });
 }
@@ -25,17 +21,17 @@ function setup() {
 function startTimer() {
   timerStartDate = new Date();
   timer = setInterval(updateTimerText, 1000);
-  startBtn.style.display = "none";
-  resetBtn.style.display = "inline-flex";
-  minutesText.classList.add("heartbeat");
+  document.querySelector("#start").style.display = "none";
+  document.querySelector("#reset").style.display = "inline-flex";
+  document.querySelector("#minutes").classList.add("heartbeat");
 }
 
 function resetTimer() {
   minutesText.innerHTML = getNumberFormattedForClock(intervalMinutes);
   clearInterval(timer);
-  startBtn.style.display = "inline-flex";
-  resetBtn.style.display = "none";
-  minutesText.classList.remove("heartbeat");
+  document.querySelector("#start").style.display = "inline-flex";
+  document.querySelector("#reset").style.display = "none";
+  document.querySelector("#minutes").classList.remove("heartbeat");
 }
 
 function finishTimer() {
@@ -55,7 +51,7 @@ function updateTimerText() {
     return;
   }
   
-  minutesText.innerHTML = getNumberFormattedForClock(remainingMinutes);
+  document.querySelector("#minutes").innerHTML = getNumberFormattedForClock(remainingMinutes);
 }
 
 function getNumberFormattedForClock(number) {
