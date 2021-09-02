@@ -36,7 +36,8 @@ function resetTimer() {
 
 function finishTimer() {
   var pomodoroNotification = new Notification("🍅 Interval Completed ✔︎");
-  setTimeout(() => pomodoroNotification.close(), 10*1000);
+  document.getElementById("chime").play();
+  setTimeout(() => pomodoroNotification.close(), 60*1000);
   resetTimer();
 }
 
