@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>ambience</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js"/>
   </head>
   <body>
     <div class="centered-iframe">
       <iframe height=720 width=1280 src="https://www.youtube-nocookie.com/embed/videoseries?list=PL5FbgyvX-6H1KUTUsckhHIxpCBAn1UtJx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <section id="app" class="hero has-background-dark is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h2 id="title" class="title is-6">Pomodoro Timer</h2>
+          <div id="timer">
+            <span id="minutes">25</span>
+          </div>
+          <div id="buttons">
+            <button id="start" class="button is-dark is-medium">
+              <i class="far fa-play-circle"></i>
+            </button>
+            <button id="reset" class="button is-dark is-medium">
+              <i class="fas fa-undo"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
