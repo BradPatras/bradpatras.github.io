@@ -35,10 +35,7 @@ body, html {
 
 #reset {
   display: none;
-}
-
-#reset:hover {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 @-webkit-keyframes twinkly {
