@@ -37,6 +37,10 @@ body, html {
   display: none;
 }
 
+#reset:hover {
+  background-color: transparent; 
+}
+
 @-webkit-keyframes twinkly {
   from {opacity: 1;}
   to {opacity: 0.3;}
