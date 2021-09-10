@@ -8,7 +8,7 @@ window.onload = (event) => {
 
 function setup() {
   Notification.requestPermission();
-  
+
   document.querySelector("#start").addEventListener("click", () => {
     startTimer();
   });
@@ -25,6 +25,7 @@ function startTimer() {
   document.querySelector("#reset").style.display = "inline-flex";
   document.querySelector("#minutes").classList.add("heartbeat");
   document.getElementById("chime").load();
+  document.getElementById("chime").volume = 0.75;
 }
 
 function resetTimer() {
