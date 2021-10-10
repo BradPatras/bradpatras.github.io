@@ -1,0 +1,9 @@
+.level-item {
+  flex-shrink: 1;
+}
+
+.level-left {
+  min-width: 0;
+  word-break: break-word;
+  flex-basis: 100%;
+}
