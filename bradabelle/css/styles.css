@@ -7,3 +7,8 @@
   word-break: break-word;
   flex-basis: 100%;
 }
+
+.card {
+  margin: auto;
+  max-width: 900px;
+}
