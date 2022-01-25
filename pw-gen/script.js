@@ -4,7 +4,7 @@ var shouldUseNumbers = true;
 var length = 14;
 
 const numbers = '1234567890';
-const symbols = '~`! @#$%^&*()_-+={[}]|\\:;"\'<,>.?/';
+const symbols = '~`!@#$%^&*()_-+={[}]|\\:;"\'<,>.?/';
 const lowercase = 'abcdefghijklmnopqrstuvwxyz';
 const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -61,28 +61,28 @@ function setupCheckboxes() {
 function generatePassword() {
 	var chars = lowercase;
 
-	var required = "";
+	var required = generateRandomString(1, lowercase);
 
 	if (shouldUseNumbers) {
 		chars += numbers;
-		required += generateRandomString(2, numbers);
+		required += generateRandomString(1, numbers);
 	}
 
 	if (shouldUseUppercase) {
 		chars += uppercase;
-		required += generateRandomString(2, uppercase);
+		required += generateRandomString(1, uppercase);
 	}
 
 	if (shouldUseSymbols) {
 		chars += symbols;
-		required += generateRandomString(2, symbols);
+		required += generateRandomString(1, symbols);
 	}
 	
 	let pwFill = generateRandomString(length - required.length, chars);
-	var pw = pwFill + required
-	shuffleArray(pw);
+	var pw = pwFill + required;
+	let shuffledPW = shuffleArray(Array.from(pw)).join('');
 
-	document.getElementById("pwInput").value = pw;
+	document.getElementById("pwInput").value = shuffledPW;
 }
 
 function generateRandomString(length, chars) {
@@ -96,4 +96,5 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+	return array
 }
