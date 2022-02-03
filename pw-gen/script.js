@@ -77,7 +77,7 @@ function generatePassword() {
 		chars += symbols;
 		required += generateRandomString(1, symbols);
 	}
-	
+
 	let pwFill = generateRandomString(length - required.length, chars);
 	var pw = pwFill + required;
 	let shuffledPW = shuffleArray(Array.from(pw)).join('');
@@ -92,9 +92,9 @@ function generateRandomString(length, chars) {
 }
 
 function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
 	return array
 }
