@@ -4,7 +4,8 @@ body, html {
   min-width: 50vw;
   background-color: #121212;
   margin: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Video Player */
