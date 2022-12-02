@@ -16,6 +16,12 @@ function setup() {
   document.querySelector("#reset").addEventListener("click", () => {
     resetTimer();
   });
+
+  if (localStorage.tomatoCount == null) {
+    localStorage.tomatoCount = 0
+  }
+
+  setTomatoCount();
 }
 
 function startTimer() {
@@ -37,11 +43,20 @@ function resetTimer() {
 }
 
 function finishTimer() {
-  document.querySelector("#title").innerHTML += " 🍅 "
+  localStorage.tomatoCount += 1;
   document.getElementById("chime").play();
   var pomodoroNotification = new Notification("🍅 Interval Completed ✔︎");
   setTimeout(() => pomodoroNotification.close(), 60*1000);
   resetTimer();
+  setTomatoCount();
+}
+
+function setTomatoCount() {
+  if (localStorage.tomatoCount == null || localStorage.tomatoCount == 0) {
+    document.querySelector("#title").innerHTML += ""
+  } else {
+    document.querySelector("#title").innerHTML += "🍅 x" + localStorage.tomatoCount
+  }
 }
 
 function updateTimerText() {
