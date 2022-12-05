@@ -43,7 +43,7 @@ function resetTimer() {
 }
 
 function finishTimer() {
-  localStorage.tomatoCount = parseInt(localStorage.tomatoCount) += 1;
+  localStorage.tomatoCount = parseInt(localStorage.tomatoCount) + 1;
   document.getElementById("chime").play();
   var pomodoroNotification = new Notification("🍅 Interval Completed ✔︎");
   setTimeout(() => pomodoroNotification.close(), 60*1000);
