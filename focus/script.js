@@ -55,7 +55,7 @@ function setTomatoCount() {
   if (localStorage.tomatoCount == null || parseInt(localStorage.tomatoCount) == 0) {
     document.querySelector("#title").innerHTML = ""
   } else {
-    document.querySelector("#title").innerHTML = "🍅 x" + localStorage.tomatoCount
+    document.querySelector("#title").innerHTML = "🍅 x" + parseInt(localStorage.tomatoCount)
   }
 }
 
