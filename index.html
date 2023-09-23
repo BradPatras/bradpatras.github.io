@@ -6,64 +6,22 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="https://bradpatras.github.io/">
-            <h1 class="navbar-title">Brad Patras</h1>
-        </a>
-        <a class="navbar-link" href="https://www.github.com/bradpatras" target="_blank">GitHub</a>     
-        <a class="navbar-link" href="mailto:bradjpatras@gmail.com">Email</a>    
-        <a class="navbar-link" href="https://www.linkedin.com/in/bradjpatras/" target="_blank">LinkedIn</a>
-    </div>
-    <div class="content">
-        <!-- todometer -->
-        <div class="project-box">
-            <h2 class="project-title">todometer | 2019</h2>
-            <a href="https://github.com/BradPatras/todometer-android" class="project-link">GitHub</a>
-            <div class="project-content">
-                <div class="project-description-box">
-                    <p>
-                        After seeing the <a href="https://github.com/cassidoo/todometer">todometer desktop app</a>, a project by a fellow ISU alum <a href="https://cassidoo.co/">Cassidy Williams</a>, I thought it would be a fun project to write a native Android version. I also used it as a platform for learning the Android Room persistence library. Overall it was a fun exercise to try to convert all the functionality of a web app onto a mobile platform, abiding by the expected user experience of Android, while also keeping a common design language with the original app.
-                    </p>
-                </div>
-                <div class="project-image-box">
-                    <a href="images/todometer-full.png"><img class="project-image" src="images/todometer.png" /></a>
-                </div>
-            </div>
-        </div>
-        <!-- gpx recorder -->
-        <div class="project-box">
-            <h2 class="project-title">GPX Recorder | 2017</h2>
-            <a href="https://github.com/BradPatras/gpx-recorder" class="project-link">GitHub</a>
-            <div class="project-content">
-                <div class="project-description-box">
-                    <p>
-                        GPX Recorder came from the desire to have an app that I could use while on multi-day backpacking trips to record my route on my phone without worrying about the app draining my battery. The name comes from the other main function of the app: exporting the routes to the .gpx file format, which is one of the most popular gps data standards.
-                    </p>
-                </div>
-                <div class="project-image-box">
-                    <a href="images/gpx-recorder2-full.png"><img class="project-image" src="images/gpx-recorder2.png" /></a>
-                </div>
-            </div>
-        </div>
-        <!-- pinkbike pod -->
-        <div class="project-box">
-            <h2 class="project-title">Pinkbike POD | 2014</h2>
-            <a href="https://play.google.com/store/apps/details?id=iboism.pinkbike.autopod" class="project-link">Play Store Page</a>
-            <div class="project-content">
-                <div class="project-description-box">
-                    <p>
-                        This app started as my project for a 36 hour hackathon at Iowa State. The initial design was... rough and since it was one of my first exposures to Android app development (and software development in general) the code was equally rough. I released it onto the Google Play Store and have given it some redesigns and small code cleanups over the years but the code would require a lot more work to get it up to my current standards for app development. It's a good reminder for myself of how far I've come as a developer.
-                    </p>
-                </div>
-                <div class="project-image-box">
-                    <a href="images/pb-pod-full.png"><img class="project-image" src="images/pb-pod.png" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1 id="name">Brad Patras</h1>
+    <h5><a href="https://www.github.com/BradPatras" target="_blank">GitHub 👨🏻‍💻</a></h5>
+    <h5><a href="https://www.linkedin.com/in/bradjpatras/" target="_blank">LinkedIn 👨🏻‍💼</a></h5>
+    &nbsp;
+    <p>I'm a software developer focused mainly on <span id="ioslabel">iOS</span> & <span id="androidlabel">Android</span>. I graduated from <span id="iowastatelabel">Iowa State University</span> in 2017 with a bachelor's degree in Computer Science.</p>
+    <p>I'm currently plugging away on the iOS team at <span id="btlabel">Buildertrend</span> where I'm a Senior Applications Developer.</p>
+    &nbsp;
+    <h3>Other neat things hosted here</h3>
+    <p class="subtitle"><a href="https://www.bradpatras.com/focus" target="_blank">focus</a> : A pomodoro timer with a huge embedded playlist of lofi/chill/ambient videos that I use regularly to help me focus.</p>
+    <p class="subtitle"><a href="https://www.bradpatras.com/pw-gen" target="_blank">pw-gen</a> : Generate strong random passwords. (I had a lot of fun writing the logic behind this and I also packaged it up as a <a href="https://github.com/BradPatras/pw-gen-ext" target="_blank">chrome extension</a>)</p>
+
 </body>
 
 </html>

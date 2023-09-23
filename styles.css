@@ -1,117 +1,71 @@
-/* Color palette
-	off-white: #f6f6f6
-	almost black: #282828
-	dark blue: #011627
-	light blue: #c3dfe0
-	shadow: #dfdfdf
-	grey: #e3e3e3
-	dark red: #98270b
-*/
+:root {
+	--background: rgb(35, 33, 54);
+	--surface: rgb(42, 39, 63);
+	--overlay: rgb(57, 53, 82);
+	--muted: rgb(110, 106, 134);
+	--subtle: rgb(144, 140, 170);
+	--text: rgb(224, 222, 244);
+	--love: rgb(235, 111, 146);
+	--gold: rgb(246, 193, 119);
+	--rose: rgb(234, 154, 151);
+	--pine: rgb(62, 143, 176);
+	--foam: rgb(156, 207, 216);
+	--iris: rgb(196, 167, 231);
+	--highlight-low: rgb(42, 40, 62);
+	--highlight-med: rgb(68, 65, 90);
+	--highlight-high: rgb(86, 82, 110);
+}
 
 html, body {
-	min-width: 100%;
-	margin: 0px;
-	background: #f6f6f6;
+	padding: 1rem;
+	background: var(--background);
+	color: var(--text);
 	font-family: 'Roboto', sans-serif;
-	position: absolute;
 }
 
-p {
-	color: #282828;
-	font-family: 'Open Sans', sans-serif;
-}
-
-a:hover, a:active {
-  text-decoration: underline;
-}
-
-a:link, a:visited {
-	color: #98270b;
+a {
+	color: var(--rose);
 	text-decoration: none;
-}
-
-.navbar {
-	display: inline-block;
-	background-color: #011627;
-	min-width: 100%;
-	text-align: center;
-	align-items: center;
-	padding-bottom: 1em;
-}
-
-.navbar-title {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	font-weight: normal;
-	color: #c3dfe0;
-}
-
-.navbar-link {
-	margin: 6px;
-}
-
-.project-box {
-	padding: 25px;
-	background-color: #fff;
-	overflow: hidden;
-    z-index: 50;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 20px 0px #dfdfdf;
-}
-
-.project-content {
-	display: flex;
-}
-
-.project-description-box {
-	min-width: 100px;
-	flex-direction: column;
-	margin-right: 30px;
-	font-size: medium;
-}
-
-.project-title {
-	margin-top: 0px;
-	color: #011627;
-	margin-bottom: 5px;
-	font-weight: 700;
-}
-
-.project-image-box {
-	height: 300px;
-	padding: 15px;
-	background-color: #e3e3e3;
-	flex-direction: row;
-}
-
-.project-image {
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.project-link {
 	font-weight: 550;
-	text-underline-position: 2px;
-	text-decoration: none;
-	color: #98270b;
+	letter-spacing: 0.02em;
 }
 
-.content {
-	max-width: 900px;
-    position: relative;
-    margin: auto;
+h1 {
+	margin-bottom: 0.7%;
 }
 
-@media (max-width: 600px) {
-	.project-content {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+h2, h5 {
+	margin-bottom: 0.35%;
+	margin-top: 0.35%;
+}
 
-	.project-description-box {
-		margin-right: 0px;
-	}
+#ioslabel {
+	color: var(--iris);
+	font-size: 1.15em;
+	margin-left: 0.15em;
+	margin-right: 0.15em;
+}
+
+#androidlabel {
+	color: var(--foam);
+	font-size: 1.15em;
+	margin-left: 0.15em;
+}
+
+#iowastatelabel {
+	color: var(--love);
+	font-size: 1.15em;
+	margin-left: 0.15em;
+	margin-right: 0.15em;
+}
+
+#btlabel {
+	color: var(--pine);
+	font-size: 1.15em;
+	margin-left: 0.15em;
+	margin-right: 0.15em;
+}
+
+.subtitle {
+	color: var(--subtle)
 }
