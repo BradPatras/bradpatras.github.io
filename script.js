@@ -21,7 +21,7 @@ var nameAnimIntervalId;
 
 function playNameAnimation() {
     if (nameAnimationFrameIndex >= nameAnimationFrames.length) {
-        vbar.innerHTML = vbarFlag ? " " : "&#9601;";
+        vbar.style.opacity = vbarFlag ? "0.01" : "1.0";
         vbarFlag = !vbarFlag;
         clearInterval(nameAnimIntervalId);
         nameAnimIntervalId = setInterval(playNameAnimation, 400)
