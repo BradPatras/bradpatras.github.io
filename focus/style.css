@@ -1,9 +1,6 @@
 @import url("/colors.css");
 
 body, html {
-  height: 100vh;
-  max-height: 100vh;
-  min-width: 50vw;
   background-color: var(--background);
   margin: 0;
   overflow-y: auto;
@@ -12,18 +9,14 @@ body, html {
 
 /* Video Player */
 .centered-iframe {
-  position: relative;
-  height: 0;
-  padding-bottom: 56.25%;
-  margin: 0 auto;
+  width: 100%;
+  height: 400px;
 }
 
 .centered-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 /* Pomodoro timer */
