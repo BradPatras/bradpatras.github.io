@@ -82,7 +82,7 @@ button {
 
 button:hover {
   background-color: var(--overlay);
-  color: var(--background);
+  color: var(--subtle);
 }
 
 @-webkit-keyframes twinkly {
