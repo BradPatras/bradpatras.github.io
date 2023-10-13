@@ -6,8 +6,7 @@
     <audio id="chime">
       <source src="chime.mp3" type="audio/mpeg">
     </audio>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" rel="stylesheet"/>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
   </head>
@@ -15,24 +14,20 @@
     <div class="centered-iframe">
       <iframe height=720 width=1280 src="https://www.youtube-nocookie.com/embed/videoseries?list=PL5FbgyvX-6H1KUTUsckhHIxpCBAn1UtJx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <section id="app" class="hero has-background-dark is-bold">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 id="title" class="title is-6"></h1>
-          <h2 id="subtitle" class="subtitle">Pomodoro Timer</h2>
+    <div id="app">
+          <h1 id="title"></h1>
+          <h2 id="subtitle">Pomodoro Timer</h2>
           <div id="timer">
             <span id="minutes">25</span>
           </div>
           <div id="buttons">
-            <button id="start" class="button is-dark is-outlined">
+            <button id="start">
               Start
             </button>
-            <button id="reset" class="button is-dark is-inverted">
+            <button id="reset">
               Reset
             </button>
           </div>
         </div>
-      </div>
-    </section>
   </body>
 </html>

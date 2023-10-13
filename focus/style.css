@@ -1,8 +1,10 @@
+@import url("/colors.css");
+
 body, html {
   height: 100vh;
   max-height: 100vh;
   min-width: 50vw;
-  background-color: #121212;
+  background-color: var(--background);
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,22 +28,61 @@ body, html {
 
 /* Pomodoro timer */
 #timer {
-  font-size: 150px;
+  font-size: 10em;
+  font-family: "Roboto", monospace;
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 0.1em;
+  color: var(--muted)
 }
 
 #title {
-  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0em;
+  color: var(--muted)
 }
 
 #subtitle {
-  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0em;
+  color: var(--muted);
+  
 }
 
 #reset {
   display: none;
+  color: var(--overlay);
+  border: none;
+}
+
+#reset:hover {
   background-color: transparent;
+  color: var(--muted);
+}
+
+#app {
+  width: 100%;
+  text-align: center;
+  opacity: .7;
+}
+
+button {
+  background-color: transparent;
+  border: 0.15em solid var(--overlay);
+  color: var(--muted);
+  padding: 1em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.2em 0.1em;
+  cursor: pointer;
+  border-radius: 0.35em;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: var(--overlay);
+  color: var(--background);
 }
 
 @-webkit-keyframes twinkly {
