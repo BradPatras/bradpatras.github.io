@@ -9,8 +9,8 @@ body, html {
 
 /* Video Player */
 .centered-iframe {
-  width: 100%;
-  height: 400px;
+  width: 100vw;
+  height: 40vh;
 }
 
 .centered-iframe iframe {
