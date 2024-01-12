@@ -10,7 +10,7 @@ body, html {
 /* Video Player */
 .centered-iframe {
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
 }
 
 .centered-iframe iframe {
@@ -33,11 +33,20 @@ body, html {
   color: var(--muted)
 }
 
+@media only screen and (max-height: 600px) {
+  #timer {
+    font-size: 6em;
+  }
+
+  #subtitle {
+    font-size: 1.2em;
+  }
+}
+
 #subtitle {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0em;
   color: var(--muted);
-  
 }
 
 #reset {
